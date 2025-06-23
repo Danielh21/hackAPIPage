@@ -1,0 +1,58 @@
+$primary-color: #eaeaeb;
+$separator-color: #ccccd1;
+
+.body {
+  background: $primary-color;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.headerContainer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: $separator-color 1px solid;
+}
+
+.footerCotanier {
+  border-top: $separator-color 1px solid;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+.storyCard {
+    border: 1px solid black;
+    border-radius: 20px;
+    min-height: 40px;
+    padding: 10px;
+        box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.28),
+      0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.storyCardTitle {
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+
+.storyContainer {
+  display: grid;
+  padding: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.attributeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .storyContainer {
+    grid-template-columns: 1fr;
+  }
+}

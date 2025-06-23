@@ -1,0 +1,1 @@
+export const baseAPI = "https://hacker-news.firebaseio.com/v0"; // Would go in .env normally.
