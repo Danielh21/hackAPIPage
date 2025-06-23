@@ -24,11 +24,11 @@ const StoryCard = ({ story }: StoryCardProps) => {
           <h4 className={styles.storyCardTitle}>{story.title}</h4>
         </div>
         <div className={styles.attributeContainer}>
+          <StoryAttribute AtrributeKey="Score" AtrributeValue={story.score} />
           <StoryAttribute
             AtrributeKey="Timestamp"
             AtrributeValue={TryConvertDate(story.time)}
           />
-          <StoryAttribute AtrributeKey="Score" AtrributeValue={story.score} />
           <StoryAttribute
             AtrributeKey="Id of Author"
             AtrributeValue={story.userModel.id}

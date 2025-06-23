@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "../style.module.scss";
 
 export const Loading = () => {
   const [dots, setDots] = useState<string>("");
@@ -16,5 +17,12 @@ export const Loading = () => {
     };
   }, [dots]);
 
-  return <div>👨🏻‍💻 Loading{dots}</div>;
+  return (
+    <div className={styles.loadingContainer}>
+      <span className={styles.loadingText}> 👨🏻‍💻 Loading{dots}</span>
+      <span className={styles.spinner} role="img" aria-label="rocket">
+        👾
+      </span>
+    </div>
+  );
 };
