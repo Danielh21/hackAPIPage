@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 import styles from "../style.module.scss";
 
 const Header = () => {
   return (
-    <div className={styles.headerContainer}>Hacker News</div>
-  )
-}
+    <header className={styles.headerContainer}>
+      <h1>Hacker News</h1>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
