@@ -4,12 +4,12 @@ import styles from "../style.module.scss";
 
 const Footer = () => {
   return (
-    <div className={styles.footerCotanier}>
+    <footer className={styles.footerCotanier}>
       <div>
         <p>© Hacker Foundation</p>
         <p>2025</p>
       </div>
-    </div>
+    </footer>
   );
 }
 
